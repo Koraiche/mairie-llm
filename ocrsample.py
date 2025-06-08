@@ -11,7 +11,7 @@ reader = easyocr.Reader(['fr'])
 full_text = ""
 
 # Appliquer l'OCR sur l'image
-results = reader.readtext("image_path")
+results = reader.readtext("./image.png")
 
 # Formater les résultats
 for (bbox, text, prob) in results:
