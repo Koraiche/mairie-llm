@@ -1,4 +1,5 @@
 from sentence_transformers import SentenceTransformer
+import numpy as np
 
 # Chargement du modèle SBERT
 model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
@@ -11,7 +12,7 @@ embeddings = model.encode(textes)
 
 print(embeddings)
 
-import numpy as np
+
 
 # Vecteurs des deux textes
 vec1 = embeddings[0]
